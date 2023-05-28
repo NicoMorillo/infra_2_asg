@@ -10,8 +10,4 @@ resource "aws_autoscaling_group" "autoscaling_group" {
   }
   vpc_zone_identifier = module.vpc.private_subnets
 
-  tags = {
-    Name = "asg"
-  }
-
 }

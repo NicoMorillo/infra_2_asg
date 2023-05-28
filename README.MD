@@ -1,7 +1,7 @@
 > Disclaimer || The user should already have aws access configurated to avoid hardcoding sensitive data into the state file. 
 
 ## Auto Scaling Group
- The AWS infrastructure, has its principal focus in deploying 2 instances  by **Auto Scaling Group**, following the **ASG** rules defined. The **ASG** works as a fail-over solution for the instances.
+ The AWS infrastructur, has its principal focus in deploying 2 instance  by **Auto Scaling Group**, following the **ASG** rules defined. The **ASG** works as a fail-over solution for the instances.
 
 | Permissions | 
     | ------ |
@@ -18,10 +18,10 @@ Before deploying the infrastructure we need to have a **S3 bucket** created to u
 
 ## _**Deploy:**_
 
-__Initiate__ and __run__ the dybamodb resource to keep lock our state for all operation that could write state.
+__Initiate__ and __run__ the dybamodb resource to keep lock our state for all operations that could write state.
 
 
-1. Initiate terraform in dynamo-lock folder:
+1. Initiate terraform in the dynamo-lock folder:
 ```sh
   terraform -chdir="dynamo-lock" init -backend-config=../backend.conf
  ```
@@ -29,9 +29,9 @@ __Initiate__ and __run__ the dybamodb resource to keep lock our state for all op
 ```sh
  terraform -chdir="./dynamo-lock" apply 
 ```
-__Initiate__ and __run__ the infrastructure, obtaining in the console the __load balancer dns name__
+__Initiate__ and __run__ the infrastructure, obtaining in the console the __load balancer DNS name__
 
-3. Initiate terraform in deploy folder:
+3. Initiate terraform in the deploy folder:
 ```sh
  terraform -chdir="deploy" init -backend-config=../backend.conf
 ```
@@ -42,7 +42,7 @@ __Initiate__ and __run__ the infrastructure, obtaining in the console the __load
 
 ## _**Test:**_
 
-With the __load balancer dns name__, open your browser and check the page.
+With the __load balancer DNS name__, open your browser and check the page.
 
 
 ## _**Destroy all infrastructure:**_

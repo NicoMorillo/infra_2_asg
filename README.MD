@@ -1,7 +1,7 @@
 > Disclaimer || The user should already have aws access configurated to avoid hardcoding sensitive data into the state file. 
 
 ## Auto Scaling Group
- The AWS infrastructue, have his principal focus in deploy 2 instances  by **Auto Scaling Group**, following the **ASG** rules difined . The **ASG** give works as faileover solution to for the instances.
+ The AWS infrastructure, has its principal focus in deploying 2 instances  by **Auto Scaling Group**, following the **ASG** rules defined. The **ASG** works as a fail-over solution for the instances.
 
 | Permissions | 
     | ------ |

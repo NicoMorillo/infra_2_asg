@@ -4,12 +4,12 @@
  The AWS infrastructur, has its principal focus in deploying 2 instance  by **Auto Scaling Group**, following the **ASG** rules defined. The **ASG** works as a fail-over solution for the instances.
 
 | Permissions | 
-    | ------ |
-    | S3|
-    | DyanmoDB|
-    | VPC|
-    | EC2|
-    | IAM|
+| ------ |
+| S3|
+| DyanmoDB|
+| VPC|
+| EC2|
+| IAM|
 
 
 The AWS region selected is **us-east-1** to the backend and all the resources.
